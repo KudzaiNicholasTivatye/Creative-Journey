@@ -5,14 +5,14 @@ import Homepage from './components/Homepage';
 import Contact from './components/Contact';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Services from './components/Services';
-import ScrollToTop from "./components/ScrollToTop.jsx";
+
 
 
 
 const App = () => {
   return (
     <Router>
-      <ScrollToTop />
+    
       <Routes>
         
         <Route path="/" element={<Homepage />} />
