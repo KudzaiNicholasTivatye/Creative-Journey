@@ -161,57 +161,52 @@ const AboutUs = () => {
       </div>
 
       {/* -- Contact Section / Footer -- */}
-      <footer className="footer">
-        <div className="footer-columns">
-          <div className="footer-logo">
-            <h2>creative journey</h2>
-            <p>SLOGAN COMPANY</p>
-          </div>
-
-          <div className="footer-column">
-            <h4>WEEBLY THEMES</h4>
-            <ul>
-              <li><a href="#">Pre-Sale FAQs</a></li>
-              <li><a href="#">Submit a Ticket</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>SERVICES</h4>
-            <ul>
-              <li><a href="#">Theme Tweak</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>SHOWCASE</h4>
-            <ul>
-              <li><a href="#">Widgetkit</a></li>
-              <li><a href="#">Support</a></li>
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>ABOUT US</h4>
-            <ul>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Affiliates</a></li>
-              <li><a href="#">Resources</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fas fa-rss"></i></a>
-            <a href="#"><i className="fab fa-google-plus-g"></i></a>
-            <a href="#"><i className="fab fa-flickr"></i></a>
-          </div>
-          <p>© Copyright. All rights reserved.</p>
-        </div>
-      </footer>
+                <footer className="footer">
+                <div className="footer-columns">
+                  <div className="footer-logo">
+                    <h2>Creative Journey</h2>
+                    <p>Brand Architects For The Digital Age</p>
+                  </div>
+          
+                  <div className="footer-column">
+                    <h4>ABOUT US</h4>
+                    <ul>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Testimonial</a></li>
+                    </ul>
+                  </div>
+          
+                  <div className="footer-column">
+                    <h4>SERVICES</h4>
+                    <ul>
+                      <li><a href="#">Our Work</a></li>
+                       <li><a href="#">Our Client</a></li>
+                    </ul>
+                  </div>
+          
+                  <div className="footer-column">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                         <li><Link to="/about">About</Link></li>
+                          <li><Link to="/services">Services</Link></li>
+                          <li><Link to="/contact">Contact</Link></li>
+                              </ul>
+                  </div>
+          
+                  
+                </div>
+          
+                <div className="footer-bottom">
+                  <div className="social-icons">
+                    <a href="#"><i className="fab fa-facebook-f"></i></a>
+                    <a href="#"><i className="fab fa-twitter"></i></a>
+                    <a href="#"><i className="fas fa-rss"></i></a>
+                    <a href="#"><i className="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i className="fab fa-flickr"></i></a>
+                  </div>
+                  <p>© Copyright. All rights reserved.</p>
+                </div>
+              </footer>
     </div>
   );
 };

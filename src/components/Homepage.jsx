@@ -41,7 +41,7 @@ function App() {
   <img src={logo} alt="Creative Journey Logo" className="cta-logo" />
 
   <a className="luxury-cta" href="#contact">
-    <span className="icon">💎</span> Start Your Creative Journey
+     Start Your Creative Journey
   </a>
 </header>
 
@@ -215,36 +215,31 @@ function App() {
         </div>
 
         <div className="footer-column">
-          <h4>WEEBLY THEMES</h4>
+          <h4>ABOUT US</h4>
           <ul>
-            <li><a href="#">Pre-Sale FAQs</a></li>
-            <li><a href="#">Submit a Ticket</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Testimonial</a></li>
           </ul>
         </div>
 
         <div className="footer-column">
           <h4>SERVICES</h4>
           <ul>
-            <li><a href="#">Theme Tweak</a></li>
+            <li><a href="#">Our Work</a></li>
+             <li><a href="#">Our Client</a></li>
           </ul>
         </div>
 
         <div className="footer-column">
-          <h4>SHOWCASE</h4>
+          <h4>QUICK LINKS</h4>
           <ul>
-            <li><a href="#">Widgetkit</a></li>
-            <li><a href="#">Support</a></li>
-          </ul>
+               <li><Link to="/about">About</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                    </ul>
         </div>
 
-        <div className="footer-column">
-          <h4>ABOUT US</h4>
-          <ul>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Affiliates</a></li>
-            <li><a href="#">Resources</a></li>
-          </ul>
-        </div>
+        
       </div>
 
       <div className="footer-bottom">
