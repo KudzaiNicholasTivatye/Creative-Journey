@@ -244,6 +244,81 @@
 }
 
 /*processes*/
+.working-process {
+  background: #f5f6ff;
+  border-radius: 40px;
+  padding: 40px;
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.process-subtitle {
+  color: #6b5cff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.process-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.process-step {
+  text-align: center;
+}
+
+.process-icon {
+  background: white;
+  color: #6b5cff;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.process-step h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Tablet Shape Effect */
+.working-process {
+  position: relative;
+}
+
+.working-process::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: #f5f6ff;
+  border-radius: 50px;
+  z-index: -1;
+}
 
 
 

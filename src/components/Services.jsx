@@ -9,6 +9,7 @@ import {
   FaVideo,
   FaMapSigns,
 } from 'react-icons/fa';
+import { FaClipboardList, FaHandshake, FaChartLine } from "react-icons/fa";
 
 const Services = () => {
 const services = [
@@ -43,6 +44,32 @@ const services = [
     description: 'Delivering bold, custom signage that boosts visibility and brand recognition.',
   },
 ];
+ const steps = [
+    {
+      id: 1,
+      icon: <FaBullhorn />,
+      title: "Identify Marketing Goals",
+      description: "We start by understanding your brand vision, target audience, and key objectives."
+    },
+    {
+      id: 2,
+      icon: <FaClipboardList />,
+      title: "Create a Strategy",
+      description: "We develop a tailored marketing plan with timelines, budgets, and action steps."
+    },
+    {
+      id: 3,
+      icon: <FaHandshake />,
+      title: "Launch Campaigns",
+      description: "We execute creative campaigns across digital and traditional platforms."
+    },
+    {
+      id: 4,
+      icon: <FaChartLine />,
+      title: "Measure & Optimize",
+      description: "We track performance, analyze results, and optimize for maximum ROI."
+    }
+  ];
 
 
   return (
@@ -97,6 +124,22 @@ const services = [
           Ready to elevate your brand? Let’s collaborate and create something impactful.
         </p>
         <button className="banner-button">Get In Touch</button>
+      </div>
+    </section>
+
+    {/*working process*/}
+
+    <section className="working-process">
+      <p className="process-subtitle">OUR PROCESS</p>
+      <h2 className="process-title">Our Working Process</h2>
+      <div className="process-steps">
+        {steps.map((step) => (
+          <div className="process-step" key={step.id}>
+            <div className="process-icon">{step.icon}</div>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </div>
+        ))}
       </div>
     </section>
 
