@@ -73,7 +73,7 @@ function App() {
      <section className="top-notch-services">
   <div className="services-header">
     <h2>OUR TOP NOTCH SERVICES</h2>
-    <p className="subtitle">Magno voluptatem dolorem Dolorosi Sociis...</p>
+    <p className="subtitle">At Creative Journey, we build bold and memorable digital brand shaping your identity for the modern age.</p>
   </div>
 <section className="staggered-section">
   <div className="services-grid">
@@ -90,10 +90,14 @@ function App() {
       <p>Responsive, SEO-optimized platforms designed for scale and impact.</p>
     </div>
     <div className="crazy-box box-4">
-      <h3>Media Production</h3>
+      <h3>Creative Writing</h3>
       <p>High-impact photography, videography, animation, and audio content.</p>
     </div>
     <div className="crazy-box box-5">
+      <h3>Media Production</h3>
+      <p>High-impact photography, videography, animation, and audio content.</p>
+    </div>
+    <div className="crazy-box box-6">
       <h3>Branding & Signage</h3>
       <p>From logos to vehicle wraps—make your brand visible and unforgettable.</p>
     </div>

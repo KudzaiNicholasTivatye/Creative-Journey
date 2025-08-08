@@ -1,46 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
+import {
+  FaPaintBrush,
+  FaBullhorn,
+  FaCode,
+  FaLightbulb,
+  FaVideo,
+  FaMapSigns,
+} from 'react-icons/fa';
 
 const Services = () => {
-  const services = [
-    {
-      title: 'Digital Design',
-      desc: 'We craft compelling brand stories and immersive digital experiences that resonate. Our digital design solutions focus on driving engagement through multi-touchpoint strategies that combine creativity with strategic insight.',
-    },
-    {
-      title: 'Digital Marketing',
-      desc: 'Grow your digital presence with data-driven marketing strategies that deliver results. From social media management and content marketing to SEO and email campaigns, we help you attract, engage, and convert your ideal audience.',
-    },
-    {
-      title: 'Web Design & Development',
-      desc: 'Our responsive web solutions are tailored for performance and impact. Whether it\'s a dynamic e-commerce platform or an interactive intranet, we create websites that are user-friendly, SEO-optimized, and built to scale.',
-    },
-    {
-      title: 'Creative Writing',
-      desc: 'Words matter. Our team specializes in writing concise, compelling copy that captures attention and aligns with your brand voice—perfect for digital platforms, campaigns, and branded content.',
-    },
-    {
-      title: 'Creative Marketing',
-      desc: 'We design marketing campaigns grounded in strategy and built for a digital-first world. Our approach ensures your brand remains consistent, compelling, and competitive across all touchpoints.',
-    },
-    {
-      title: 'Media Production',
-      desc: 'Bring your story to life through professional media production. From high-quality photography and video to voiceovers, jingles, and podcast creation, we produce captivating content that builds emotional connections.',
-    },
-    {
-      title: 'Printing, Branding & Signage',
-      desc: 'From logo design to vehicle wraps and custom 3D signage, we ensure your brand identity is clearly communicated across all physical materials—elevating your brand in every environment.',
-    },
-    {
-      title: 'Branded Collateral & Promotional Materials',
-      desc: 'Make your brand unforgettable with custom-branded merchandise. We provide premium pens, diaries, apparel, mugs, corporate gifts, and more—perfect for client engagement and internal branding.',
-    },
-    {
-      title: 'Signage Solutions',
-      desc: 'Guide, inform, and inspire with creative signage solutions. We offer both indoor and outdoor signage, including wayfinding systems and innovative display concepts, tailored to enhance your brand visibility.',
-    },
-  ];
+const services = [
+  {
+    title: 'Digital Design',
+    icon: <FaPaintBrush size={40} />,
+    description: 'Crafting visually compelling assets that communicate your brand with clarity and style.',
+  },
+  {
+    title: 'Digital Marketing',
+    icon: <FaBullhorn size={40} />,
+    description: 'Driving engagement and conversions through data-led online strategies.',
+  },
+  {
+    title: 'Web Design & Development',
+    icon: <FaCode size={40} />,
+    description: 'Building fast, responsive websites that are both user-friendly and SEO-optimized.',
+  },
+  {
+    title: 'Creative Marketing',
+    icon: <FaLightbulb size={40} />,
+    description: 'Telling your brand story through innovative campaigns and strategic messaging.',
+  },
+  {
+    title: 'Media Production',
+    icon: <FaVideo size={40} />,
+    description: 'Producing high-quality photo, video, and audio content that captures attention.',
+  },
+  {
+    title: 'Signage Solutions',
+    icon: <FaMapSigns size={40} />,
+    description: 'Delivering bold, custom signage that boosts visibility and brand recognition.',
+  },
+];
+
 
   return (
     <>
@@ -72,14 +75,30 @@ const Services = () => {
         </section>
 
         {/* Services Grid */}
-        <section className="services-grid">
-          {services.map((service, index) => (
-            <div className="service-card" key={index}>
-              <h3>{service.title}</h3>
-              <p>{service.desc}</p>
-            </div>
-          ))}
-        </section>
+        
+        <section className="services-section">
+          
+      <div className="services-grid">
+        {services.map((service, index) => (
+          <div key={index} className="service-card">
+            <div className="icon">{service.icon}</div>
+            <h3>{service.title}</h3>
+            <p>{service.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {/*red section*/}
+
+     <section className="red-banner-wrapper">
+      <div className="red-banner-tablet">
+        <p className="banner-text">
+          Ready to elevate your brand? Let’s collaborate and create something impactful.
+        </p>
+        <button className="banner-button">Get In Touch</button>
+      </div>
+    </section>
 
         {/* Pricing Section */}
         <section className="pricing">

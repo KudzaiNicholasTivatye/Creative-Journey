@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import './AboutUs.css';
 import { Link } from 'react-router-dom';
 import abt from '../assets/abt.jpeg'; // Adjust the path as necessary
-import { FaUsers, FaCheckCircle, FaDollarSign, FaUserTie } from 'react-icons/fa';
-import { FaSmile,FaHandshake } from 'react-icons/fa';
+import { FaUsers, FaCheckCircle, FaDollarSign, FaUserTie,FaBullhorn, FaHeadset, FaChartLine, FaRocket, FaPenNib, FaUserFriends  } from 'react-icons/fa';
+import { FaSmile, } from 'react-icons/fa';
+import { FaHandshake,FaShieldAlt } from 'react-icons/fa';
+
 
 const AboutUs = () => {
   const statsContainerRef = useRef(null);
@@ -63,6 +65,44 @@ const AboutUs = () => {
       }
     };
   }, []);
+  const reasons = [
+  {
+    number: '01',
+    icon: <FaBullhorn />,
+    title: 'Strategic Brand Thinking',
+    description: 'We craft tailored strategies that position your brand for maximum visibility and long-term growth.',
+  },
+  {
+    number: '02',
+    icon: <FaHeadset />,
+    title: '24/7 Client Support',
+    description: 'Our team is always on standby to assist with your campaigns, feedback, or urgent marketing needs.',
+  },
+  {
+    number: '03',
+    icon: <FaChartLine />,
+    title: 'Proven ROI Performance',
+    description: 'We deliver measurable results with data-driven marketing that maximizes return on investment.',
+  },
+  {
+    number: '04',
+    icon: <FaRocket />,
+    title: 'Agile & Adaptive Methods',
+    description: 'We use flexible workflows that quickly adapt to market trends, ensuring relevance and speed.',
+  },
+  {
+    number: '05',
+    icon: <FaPenNib />,
+    title: 'Creative Assets Included',
+    description: 'Our packages include content creation—graphics, video, and copy—so you don’t need extra services.',
+  },
+  {
+    number: '06',
+    icon: <FaUserFriends />,
+    title: 'User-Centered Campaigns',
+    description: 'We prioritize end-user behavior to craft campaigns that truly resonate and convert.',
+  },
+];
 
   return (
     <div className="umbra-about">
@@ -105,42 +145,68 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <section className="why-choose-us">
-        <h2 className="section-title">Why choose us?</h2>
-        <p className="section-description">
-          At Creative Journey, we blend strategy, creativity, and data to help your brand grow. We’re not just marketers — we’re partners in your success, delivering bold ideas that drive real results.
+        <section className="about-company">
+      <div className="about-images">
+        <div className="image-group">
+          <img src={abt} alt="Client" className="front-image" />
+          <img src={abt} alt="Client" className="back-image" />
+          <div className="client-badge">
+            <h2>500+</h2>
+            <p>Trusted Clients</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="about-content">
+        <p className="section-label">About Company</p>
+        <h2 className="main-title">We Are Creative Journey Your Branding & Digital Partner</h2>
+        <p className="description">
+          Creative Journey is a full-service digital agency committed to helping brands scale creatively. We mix strategy, design, and technology to tell your story in a way that inspires action.
         </p>
 
-        <div className="card-grid">
-          <div className="card">
-            <h3 className="card-title">Experienced Professionals</h3>
-            <p className="card-text">
-              Our team brings years of hands on experience across industries, combining deep marketing knowledge with fresh, creative thinking to deliver results that matter.
-            </p>
+        <div className="features">
+          <div className="feature-item">
+            <FaHandshake className="feature-icon" />
+            <div>
+              <h3>Trusted Partner</h3>
+              <p>Clients trust us to grow their brand with creative strategies and measurable outcomes.</p>
+            </div>
           </div>
-             <div className="card">
-        <FaSmile className="card-icon" />
-        <h3 className="card-title">Satisfaction Guarantee</h3>
-        <p className="card-text">
-          We’re committed to your success. If you’re not satisfied, we’ll work with you until you are — because your satisfaction is our priority.
-        </p>
-      </div>
-      <div className="card">
-        <FaDollarSign className="card-icon" />
-        <h3 className="card-title">Affordable Rates</h3>
-        <p className="card-text">
-          We offer high quality marketing solutions at prices that fit your budget — no hidden fees, just real value.
-        </p>
-      </div>
-      <div className="card">
-        <FaHandshake className="card-icon" />
-        <h3 className="card-title">Reliable & Trustworthy</h3>
-        <p className="card-text">
-          You can count on us to deliver on time, every time. We value honesty, consistency, and building long-term partnerships you can trust.
-        </p>
-      </div>
+
+          <div className="feature-item">
+            <FaRocket className="feature-icon" />
+            <div>
+              <h3>Fast-Track Campaigns</h3>
+              <p>We deploy strategies quickly, so your brand reaches its audience without delay.</p>
+            </div>
+          </div>
+
+          <div className="feature-item">
+            <FaShieldAlt className="feature-icon" />
+            <div>
+              <h3>Tested Reliability</h3>
+              <p>From start to scale, we bring consistent quality and support you can rely on.</p>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
+       <section className="why-choose-us">
+      
+      <h2 className="section-title">Why Choose Us</h2>
+      <div className="reasons-grid">
+        {reasons.map(({ number, icon, title, description }) => (
+          <div className="reason-card" key={number}>
+            <div className="icon-wrapper">{icon}</div>
+            <span className="reason-number">{number}</span>
+            <h3 className="reason-title">{title}</h3>
+            <p className="reason-description">{description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    
 
       {/* Stats Section with visible class by default for testing */}
       <div className="stats-wrapper" ref={statsContainerRef}>

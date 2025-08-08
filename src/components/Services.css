@@ -86,7 +86,7 @@
   position: relative;
   text-align: center;
  
-  padding: 60px 20px;
+  padding: 90px 20px;
   text-align: center;
   border-radius: 0 0 12px 12px;
  
@@ -128,6 +128,7 @@
 .mission {
   text-align: center;
   margin: 40px 20px;
+  background-color:  #102336ff; 
 }
 
 .mission h5 {
@@ -135,6 +136,7 @@
   font-weight: bold;
   text-transform: uppercase;
   font-size: 2rem;
+   margin-top: -50px; /* Move the whole section up */
 }
 
 .mission h2 {
@@ -148,25 +150,103 @@
   border-radius: 4px;
 }
 
+/*services grid*/
+.services-section {
+  padding: 60px 20px;
+   margin-top: -90px; /* Move the whole section up */
+  display: flex;
+  justify-content: center;
+  background-color: #102336ff; /* Light background */
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
-  margin-top: -40px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .service-card {
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .icon {
+  margin-bottom: 15px;
+  color: #e74c3c; /* Stylish red */
 }
 
 .service-card h3 {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
 }
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/*red section*/
+.red-banner-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+  margin-top: -70px;
+}
+
+.red-banner-tablet {
+  background-color: #e53935; /* Bright red */
+  color: white;
+  padding: 25px 30px;
+  border-radius: 30px; /* Tablet shape */
+  max-width: 700px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.banner-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.banner-button {
+  background-color: white;
+  color: #e53935;
+  border: none;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.banner-button:hover {
+  background-color: #fceaea;
+  transform: scale(1.05);
+}
+
+/*processes*/
+
+
+
 
 .highlight-card {
   background-color: #c6ff94;
