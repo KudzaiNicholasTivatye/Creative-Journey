@@ -15,8 +15,62 @@ import karan from '../assets/karan.png';
 import exodus from '../assets/exodus.png';
 import abt from '../assets/abt.jpeg';
 import { FaStar } from 'react-icons/fa';
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
+
+  const testimonials = [
+  {
+   name: "Marketing Lead",
+    position: "  MyCash",
+    text: "Creative Journey transformed our brand presence with their innovative approach and attention to detail. Their team is professional, creative, and truly invested in our success from start to finish.",
+    rating: 5,
+  },
+  {
+    name: " CEO",
+    position: "Leengate",
+    text: "Their work is professional, inspiring, and deeply collaborative. True brand architects.",
+    rating: 4,
+  },
+  {
+    name: "Manager",
+    position: "Karan Investiments",
+    text: "Creative Journey delivered stunning signage that turned heads and boosted our visibility bold, professional, and perfectly on brand.",
+    rating: 5,
+  },
+   {
+    name: "CEO,",
+    position: "Tatu Capital",
+    text: "The visuals from Creative Journey captured our event’s energy perfectly crisp photography and cinematic videography that truly impressed.",
+    rating: 5,
+  },
+    {
+    name: "Marketing Executive",
+    position: "Nbs Bank",
+    text:  "Creative Journey delivered powerful visuals for NBS sharp, professional shots that brought our brand story to life beautifully." , 
+    rating: 3,
+  },
+];
+ const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2, // 2 cards at a time
+    slidesToScroll: 1,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // 1 card on mobile
+        },
+      },
+    ],
+  };
+
   return (
     <div>
 
@@ -112,58 +166,37 @@ function App() {
 
 
       {/* -- Testimonials Section -- */}
-       <div className="testheader">
-           <h2>What Our Clients Say</h2>
-        </div>
-      <section id="testimonials">
-       
-       
-        <blockquote>
       
-          “Creative Journey gave our brand a voice and visual identity that resonates with our market. We couldn't be happier.”
-          <cite>— Marketing Lead, MyCash</cite>
+    <section className="testimonials-section">
+      <h4 className="section-subtitle">Testimonials</h4>
+      <h2 className="section-title">Client says about us</h2>
 
-                <div className="stars">
-        {[...Array(5)].map((_, i) => <FaStar key={i} className="star-icon" />)}
-      </div>
-        </blockquote>
-        <blockquote>
-          “Their work is professional, inspiring, and deeply collaborative. True brand architects.”
-          <cite>— CEO, Bell Petroleum</cite>
-                     <div className="stars">
-        {[...Array(5)].map((_, i) => <FaStar key={i} className="star-icon" />)}
-      </div>
-        </blockquote>
-          <blockquote>
-          “Creative Journey transformed our brand presence professional, creative, and truly invested in our success from start to finish.”
-          <cite>— CEO, Leengate</cite>
-                     <div className="stars">
-        {[...Array(4)].map((_, i) => <FaStar key={i} className="star-icon" />)}
-      </div>
-        </blockquote>
-        <blockquote>
-          “Creative Journey delivered stunning signage that turned heads and boosted our visibility bold, professional, and perfectly on brand.”
-          <cite>— Manager, Karan Investiments</cite>
-                     <div className="stars">
-        {[...Array(5)].map((_, i) => <FaStar key={i} className="star-icon" />)}
-      </div>
-        </blockquote>
-        <blockquote>
-         “The visuals from Creative Journey captured our event’s energy perfectly crisp photography and cinematic videography that truly impressed.”
-          <cite>— CEO, Tatu Capital</cite>
-                     <div className="stars">
-        {[...Array(3)].map((_, i) => <FaStar key={i} className="star-icon" />)}
-      </div>
-        </blockquote>
-          <blockquote>
-          “Creative Journey delivered powerful visuals for NBS — sharp, professional shots that brought our brand story to life beautifully.”
-          <cite>— Marketing Executive, Nbs Bank</cite>
-                     <div className="stars">
-        {[...Array(4)].map((_, i) => <FaStar key={i} className="star-icon" />)}
-      </div>
-        </blockquote>
-       
-      </section>
+      <Slider {...settings} className="testimonials-slider">
+        {testimonials.map((t, index) => (
+          <div key={index} className="testimonial-slide">
+            <div className="testimonial-text-box">
+              <span className="quote-mark">“</span>
+              <h3 className="testimonial-name">{t.name}</h3>
+              <p className="testimonial-position">{t.position}</p>
+
+              {/* Rating Stars */}
+              <div className="stars">
+                {Array.from({ length: 5 }, (_, i) => (
+                  <span key={i} className={i < t.rating ? "star filled" : "star"}>
+                    ★
+                  </span>
+                ))}
+              </div>
+
+              <p className="testimonial-text">{t.text}</p>
+            </div>
+          </div>
+        ))}
+      </Slider>
+
+      <h4 className="section-subtitle">Happy Clients</h4>
+      <h2 className="section-title">Successfully worked with them</h2>
+    </section>
 
       {/* -- About Section -- */}
     <section id="about">
@@ -189,6 +222,10 @@ function App() {
   </div>
 </section>
 
+
+
+
+  {/* -- Contact Section -- */}
         <section className="contact-section">
       <div className="contact-container">
         <div className="contact-form">

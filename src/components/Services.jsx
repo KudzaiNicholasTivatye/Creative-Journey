@@ -10,6 +10,7 @@ import {
   FaMapSigns,
 } from 'react-icons/fa';
 import { FaClipboardList, FaHandshake, FaChartLine } from "react-icons/fa";
+import abt from '../assets/abt.jpeg';
 
 const Services = () => {
 const services = [
@@ -70,6 +71,7 @@ const services = [
       description: "We track performance, analyze results, and optimize for maximum ROI."
     }
   ];
+
 
 
   return (
@@ -140,6 +142,44 @@ const services = [
             <p>{step.description}</p>
           </div>
         ))}
+      </div>
+    </section>
+
+        {/*our work*/}
+
+      <section className="our-work-section">
+      <h2 className="work-heading">Our Work</h2>
+      <p className="work-text">
+        We create visually striking branding and marketing campaigns that
+        captivate audiences and tell your story.
+      </p>
+
+      <div className="collage-container">
+        <img
+          src={abt}
+          alt="Work 1"
+          className="collage-img img1"
+        />
+        <img
+          src={abt}
+          alt="Work 2"
+          className="collage-img img2"
+        />
+        <img
+          src={abt}
+          alt="Work 3"
+          className="collage-img img3"
+        />
+        <img
+          src={abt}
+          alt="Work 4"
+          className="collage-img img4"
+        />
+        <img
+          src={abt}
+          alt="Work 5"
+          className="collage-img img5"
+        />
       </div>
     </section>
 
