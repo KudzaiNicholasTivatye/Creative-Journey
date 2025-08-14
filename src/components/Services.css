@@ -320,85 +320,79 @@
   z-index: -1;
 }
 
-/* our work*/
-.our-work-section {
+
+
+/*our work */
+.our-works {
   text-align: center;
-  padding: 60px 20px;
+  padding: 40px;
+  background: #f8f8f8;
+ 
 }
-
-.work-heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+ . .our-works h2{
+  font-size: 50px;
 }
-
-.work-text {
-  max-width: 600px;
-  margin: 0 auto 50px auto;
-  font-size: 1.1rem;
-  color: #555;
-}
-
-.collage-container {
+.carousel {
   position: relative;
-  width: 600px;
-  height: 450px;
-  margin: 0 auto;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.collage-img {
+.card {
   position: absolute;
-  width: 180px;
-  height: 230px;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Positioning like your image */
-.img1 {
-  top: 50px;
-  left: 0;
+/* Positioning for the carousel cards */
+.left2 {
+  transform: translateX(-350px) scale(0.7) rotateY(20deg);
+  z-index: 1;
+}
+.left1 {
+  transform: translateX(-200px) scale(0.85) rotateY(15deg);
+  z-index: 2;
+}
+.active {
+  transform: translateX(0) scale(1);
+  z-index: 3;
+}
+.right1 {
+  transform: translateX(200px) scale(0.85) rotateY(-15deg);
+  z-index: 2;
+}
+.right2 {
+  transform: translateX(350px) scale(0.7) rotateY(-20deg);
+  z-index: 1;
 }
 
-.img2 {
-  top: 0;
-  left: 150px;
+.caption {
+  margin-top: 20px;
 }
 
-.img3 {
-  top: 80px;
-  left: 300px;
+.controls {
+  margin-top: 15px;
 }
-
-.img4 {
-  top: 0;
-  left: 450px;
+.controls button {
+  background: orange;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 15px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
 }
-
-.img5 {
-  top: 220px;
-  left: 150px;
+.controls button:hover {
+  background: #ff9800;
 }
-
-@media (max-width: 768px) {
-  .collage-container {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .collage-img {
-    position: static;
-    margin: 5px;
-    width: 45%;
-    height: auto;
-  }
-}
-
 
 
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Services.css';
+import  { useState } from "react";
 import {
   FaPaintBrush,
   FaBullhorn,
@@ -11,6 +12,7 @@ import {
 } from 'react-icons/fa';
 import { FaClipboardList, FaHandshake, FaChartLine } from "react-icons/fa";
 import abt from '../assets/abt.jpeg';
+
 
 const Services = () => {
 const services = [
@@ -71,10 +73,28 @@ const services = [
       description: "We track performance, analyze results, and optimize for maximum ROI."
     }
   ];
+  const images = [
+  { src: abt, title: "Work One", author: "John Doe" },
+  { src: abt, title: "Work Two", author: "Jane Smith" },
+  { src: abt, title: "Work Three", author: "Alex Ray" },
+  { src: abt, title: "Work Four", author: "Lisa Brown" },
+  { src: abt, title: "Work Five", author: "David Lee" },
+];
+  const [current, setCurrent] = useState(2); // Start with middle image
 
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
 
 
   return (
+
+
+  
     <>
       <nav className="glass-navbar">
         <div className="glass-content">
@@ -145,43 +165,45 @@ const services = [
       </div>
     </section>
 
-        {/*our work*/}
+      
 
-      <section className="our-work-section">
-      <h2 className="work-heading">Our Work</h2>
-      <p className="work-text">
+ {/* our work 22 Section */}
+  <div className="our-works">
+      <h2>Our Works</h2>
+        <p className="work-text">
         We create visually striking branding and marketing campaigns that
         captivate audiences and tell your story.
       </p>
+      <div className="carousel">
+        {images.map((img, index) => {
+          let position = index - current;
+          if (position < 0) position += images.length;
 
-      <div className="collage-container">
-        <img
-          src={abt}
-          alt="Work 1"
-          className="collage-img img1"
-        />
-        <img
-          src={abt}
-          alt="Work 2"
-          className="collage-img img2"
-        />
-        <img
-          src={abt}
-          alt="Work 3"
-          className="collage-img img3"
-        />
-        <img
-          src={abt}
-          alt="Work 4"
-          className="collage-img img4"
-        />
-        <img
-          src={abt}
-          alt="Work 5"
-          className="collage-img img5"
-        />
+          let className = "card";
+          if (position === 0) className += " left2";
+          else if (position === 1) className += " left1";
+          else if (position === 2) className += " active";
+          else if (position === 3) className += " right1";
+          else className += " right2";
+
+          return (
+            <div
+              key={index}
+              className={className}
+              style={{ backgroundImage: `url(${img.src})` }}
+            ></div>
+          );
+        })}
       </div>
-    </section>
+      <div className="caption">
+        <h3>{images[current].title}</h3>
+        <p>{images[current].author}</p>
+      </div>
+      <div className="controls">
+        <button onClick={prevSlide}>&larr;</button>
+        <button onClick={nextSlide}>&rarr;</button>
+      </div>
+    </div>
 
         {/* Pricing Section */}
         <section className="pricing">
