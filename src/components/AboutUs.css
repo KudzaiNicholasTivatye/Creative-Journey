@@ -394,7 +394,7 @@
   align-items: center;
   min-height: 85vh; /* Full viewport height */
   margin-top: -60px; /* Moves the container up */
-  padding-top: 70px;
+  padding-top: 30px;
 }
 
 .stats-container {
@@ -403,7 +403,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #003366;
-  padding: 40px 20px;
+  padding: 20px 20px;
   color: white;
   text-align: center;
   border-radius: 20px;
