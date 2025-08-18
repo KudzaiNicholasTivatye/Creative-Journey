@@ -104,6 +104,7 @@ const AboutUs = () => {
   },
 ];
 
+
   return (
     <div className="umbra-about">
       <nav className="glass-navbar">
@@ -225,6 +226,36 @@ const AboutUs = () => {
           ))}
         </section>
       </div>
+
+      {/* -- floating Section -- */}
+       <section className="amazing-section">
+      <h2 className="amazing-title">
+        Let’s Create an <span className="highlight">Amazing</span> <br />
+        Project Together!
+      </h2>
+
+      <button className="contact-btn">Contact Us</button>
+
+      {/* Floating tags */}
+      <div className="floating-tags">
+        <span>Digital Design</span>
+        <span>Digital Marketing</span>
+        <span>Web Design & Development</span>
+        <span>Creative Marketing</span>
+        <span>Media Production</span>
+        <span>Signage Solutions</span>
+      </div>
+
+      {/* Scrolling bottom strip */}
+      <div className="scrolling-strip">
+        <div className="scrolling-text">
+          <span>Digital Design ✱ Digital Marketing ✱ Web Design & Development ✱ Creative Marketing ✱ Media Production ✱ Signage Solutions ✱</span>
+          <span>Digital Design ✱ Digital Marketing ✱ Web Design & Development ✱ Creative Marketing ✱ Media Production ✱ Signage Solutions ✱</span>
+        </div>
+      </div>
+    </section>
+
+    
 
       {/* -- Contact Section / Footer -- */}
                 <footer className="footer">

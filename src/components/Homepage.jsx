@@ -247,6 +247,9 @@ function App() {
       </div>
     </section>
 
+     {/* -- Contact Section / Footer -- */}
+     
+
       {/* -- Contact Section / Footer -- */}
       <footer className="footer">
       <div className="footer-columns">
