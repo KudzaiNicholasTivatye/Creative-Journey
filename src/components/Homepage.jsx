@@ -199,13 +199,13 @@ function App() {
     </section>
 
       {/* -- About Section -- */}
-    <section id="about">
-  <h2>About Us</h2>
-  <div className="about-flex">
+<section id="about">
+  <div className="about-flex glass-card">
     <div className="about-text">
+      <h2>WE ARE CREATIVE JOURNEY</h2>
       <p>
         Creative Journey is an independent Zimbabwean branding and marketing agency built to revolutionize how businesses connect with their audiences.
-        We don’t just design logos or run campaigns—we craft transformative brand experiences rooted in creativity, innovation, and integrity.
+        We don’t just design logos or run campaigns we craft transformative brand experiences rooted in creativity, innovation, and integrity.
       </p>
       <p>
         <strong>Our Vision:</strong> We aspire to be Africa’s most preferred creative marketing and advertising service provider,
@@ -213,7 +213,7 @@ function App() {
       </p>
       <p>
         <strong>Our Mantra:</strong> To revolutionize the marketing and advertising landscape by consistently delivering creative, innovative, and ethical solutions.
-        We're redefining what it means to be a full-service agency—holding ourselves to a higher standard of excellence, purpose, and transparency.
+        We're redefining what it means to be a full-service agency holding ourselves to a higher standard of excellence, purpose, and transparency.
       </p>
     </div>
     <div className="about-image">
@@ -221,6 +221,7 @@ function App() {
     </div>
   </div>
 </section>
+
 
 
 
