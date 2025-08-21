@@ -32,7 +32,7 @@ function App() {
   {
     name: " CEO",
     position: "Leengate",
-    text: "Their work is professional, inspiring, and deeply collaborative. True brand architects.",
+    text: "Their approach transforms ideas into impactful brand experiences, positioning them as trusted partners and true architects of meaningful marketing and storytelling excellence.",
     rating: 4,
   },
   {
@@ -124,6 +124,8 @@ function App() {
         </div>
       </section>
 
+     {/* -- Services Section -- */}
+
      <section className="top-notch-services">
   <div className="services-header">
     <h2>OUR TOP NOTCH SERVICES</h2>
@@ -153,7 +155,7 @@ function App() {
     </div>
     <div className="crazy-box box-6">
       <h3>Branding & Signage</h3>
-      <p>From logos to vehicle wraps—make your brand visible and unforgettable.</p>
+      <p>From logos to vehicle wraps make your brand visible and unforgettable.</p>
     </div>
   </div>
 </section>
@@ -227,28 +229,44 @@ function App() {
 
 
   {/* -- Contact Section -- */}
-        <section className="contact-section">
+  <section className="contact-section">
       <div className="contact-container">
-        <div className="contact-form">
-          <h2>Contact Us</h2>
-          <form>
-            <input type="text" placeholder="Name" required />
-            <input type="email" placeholder="Email" required />
-            <textarea placeholder="Message" rows="5" required></textarea>
-            <button type="submit">SEND</button>
-          </form>
+        {/* Left Content */}
+        <div className="contact-text">
+          <p className="small-heading">WE’RE HERE TO HELP YOU</p>
+          <h2>
+            Let’s <span>Discuss</span> Your Marketing Needs
+          </h2>
+          <p className="description">
+            Are you looking for innovative branding and marketing solutions
+            tailored to your business? Reach out to <strong>Creative Journey</strong>
+            and let’s build something impactful together.
+          </p>
+
+          <div className="contact-info">
+            <p>
+              <i className="fas fa-envelope"></i> hello@creativejourney.com
+            </p>
+            <p>
+              <i className="fas fa-phone"></i> +263 777 123 456
+            </p>
+          </div>
         </div>
-        <div className="contact-info">
-          <h3>Get in Touch</h3>
-          <p><strong>Email:</strong>creativejourney@gmail.com</p>
-          <p><strong>Phone:</strong> +263 78 896 146</p>
-          <p><strong>Address:</strong> Harare</p>
-          <p><strong>Hours:</strong> 09:00 - 18:00</p>
+
+        {/* Right Form */}
+        <div className="contact-form">
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <input type="text" placeholder="Company / Brand Name" />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Get a Solution</button>
+          </form>
         </div>
       </div>
     </section>
 
-     {/* -- Contact Section / Footer -- */}
+  
      
 
       {/* -- Contact Section / Footer -- */}

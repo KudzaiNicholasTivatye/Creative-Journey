@@ -181,7 +181,7 @@ section {
 section h2 {
  
   font-size: 2rem;
-  color: #2c2a2aff;
+  color: #0d0a0aff;
   margin-bottom: 1.5rem;
  
 }
@@ -248,25 +248,24 @@ section h2 {
 
 /* ===== Services Section ===== */
 .top-notch-services {
-   background: url('../assets/networking.jpg') no-repeat ;
+   background: linear-gradient( rgba(205, 11, 11, 0.3)),
+   url('../assets/servicessctn.jpg') no-repeat ;
   background-size: cover;
   background-position: center;
-
- 
-
   text-align: center;
   color: white;
   position: relative;
   overflow: hidden;
     width: 100%;
     background-attachment: fixed; /* optional for parallax feel */
-  
+
 }
 
 .services-header h2 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color:white;
 }
 
 .services-header .subtitle {
@@ -323,7 +322,7 @@ section h2 {
 
 .box-3 {
   transform: scale(1.05) rotate(-1.5deg);
-  background-color: #111827;
+ 
   z-index: 3;
 }
 
@@ -359,7 +358,7 @@ section h2 {
 .section-subtitle {
   font-size: 1rem;
   font-weight: 600;
-  color: #007bff;
+  color: #f3f6faff;
   margin-bottom: 5px;
 }
 
@@ -523,88 +522,121 @@ section h2 {
 
 
 /* ===== Contact Section ===== */
-.contact-section {
 
-  padding: 70px 20px;
+/* Contact Section */
 
-}
 .contact-section {
-  background-color: #f0f6ff;
-  font-family: 'Segoe UI', sans-serif;
+  padding: 60px 20px;
+  background: #f8f9fc;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-container {
+  margin-top: 100px;
   display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  margin-top: 40px
-
-
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 95%;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  gap: 40px;
 }
+
+/* Left Side */
+.contact-text {
+  flex: 1;
+}
+
+.contact-text .small-heading {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.contact-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.contact-text h2 span {
+  color: #007bff; /* Accent color */
+}
+
+.contact-text .description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #333;
+  font-weight: 500;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #007bff;
+}
+
+/* Right Side (Form) */
 
 .contact-form {
-  flex: 1 1 60%;
-  padding: 3rem;
-  background-color: #ffffff;
-    border-radius: 12px;
-}
-
-.contact-form h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  color: #003366;
+  flex: 0.9; /* shrink size */
+  max-width: 450px; /* fixed compact width */
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  padding: 0px 25px;  /* less padding inside */
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
- 
 }
 
 .contact-form input,
 .contact-form textarea {
-  margin-bottom: 1rem;
-  padding: 0.75rem 1rem;
-  border: 1px solid #cce0ff;
-  border-radius: 6px;
-  font-size: 1rem;
+  margin-bottom: 12px;
+  padding: 10px 14px; /* smaller inputs */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact-form textarea {
+  resize: none; /* keep clean look */
 }
 
 .contact-form button {
-  background-color: #0057b8;
-  color: #fff;
-  padding: 0.75rem 1.5rem;
+  background: #007bff;
+  color: white;
+  padding: 10px;
   border: none;
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #004099;
+  background: #0056b3;
 }
 
-.contact-info {
-  flex: 1 1 40%;
-  background-color: #0057b8;
-  color: #ffffff;
-  padding: 3rem;
-    border-radius: 12px;
-}
 
-.contact-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
+  .contact-form {
+    width: 100%;
+  }
 
-.contact-info p {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
 
 
 
