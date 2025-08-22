@@ -94,7 +94,7 @@ const AboutUs = () => {
     number: '05',
     icon: <FaPenNib />,
     title: 'Creative Assets Included',
-    description: 'Our packages include content creation—graphics, video, and copy—so you don’t need extra services.',
+    description: 'Our packages include content creation graphics, video, and copy so you don’t need extra services.',
   },
   {
     number: '06',
