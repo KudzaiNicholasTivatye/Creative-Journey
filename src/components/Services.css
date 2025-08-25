@@ -125,39 +125,44 @@
   color: #ffffff;
 }
 
-.mission {
-  text-align: center;
-  margin: 40px 20px;
-}
 
-.mission h5 {
-  color: #9dcf00;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 2rem;
-   margin-top: -50px; /* Move the whole section up */
-}
-
-.mission h2 {
-  font-size: 1.5rem;
-  margin-top: 7px;
-}
-
-.mission .highlight {
-  background-color: #c6ff94;
-  padding: 0 6px;
-  border-radius: 4px;
-}
 
 /*services grid*/
 .services-section {
   padding: 60px 20px;
-   margin-top: -90px; /* Move the whole section up */
+  margin-top: -90px; /* Move the whole section up */
   display: flex;
-  justify-content: center;
-  background-color: #102336ff; /* Light background */
+  flex-direction: column; /* allow header + grid stacking */
+  align-items: center; /* center horizontally */
+  background-color: #102336ff; /* Dark background */
+  text-align: center;
 }
 
+/* Header section */
+.services-header {
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+.services-header h5 {
+  text-align: center;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #e74c3c; /* Matches icon red */
+  margin-bottom: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 70px;
+}
+
+.services-header h2 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+/* Grid stays same */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

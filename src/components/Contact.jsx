@@ -11,7 +11,7 @@ const ContactUs = () => {
 
 
 
-    <section className="contact-section">
+    <section className="contact">
 
 <nav className="glass-navbar">
   <div className="glass-content">

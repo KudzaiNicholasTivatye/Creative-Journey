@@ -114,29 +114,26 @@ const services = [
           <p>Home &gt; Services</p>
         </section>
 
-        {/* Mission Statement */}
-        <section className="mission">
-          <h5>Our Services</h5>
-          <h2>
-            Our Mission Is To Make Your Business Better Through
-            Technology & Creativity
-          </h2>
-        </section>
+      {/* Services + Mission Section */}
+<section className="services-section">
+  <div className="services-header">
+    <h5>Our Services</h5>
+    <h2>
+      Our Mission Is To Make Your Business Better Through
+      Technology & Creativity
+    </h2>
+  </div>
 
-        {/* Services Grid */}
-        
-        <section className="services-section">
-          
-      <div className="services-grid">
-        {services.map((service, index) => (
-          <div key={index} className="service-card">
-            <div className="icon">{service.icon}</div>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-          </div>
-        ))}
+  <div className="services-grid">
+    {services.map((service, index) => (
+      <div key={index} className="service-card">
+        <div className="icon">{service.icon}</div>
+        <h3>{service.title}</h3>
+        <p>{service.description}</p>
       </div>
-    </section>
+    ))}
+  </div>
+  </section>
 
     {/*red section*/}
 
@@ -210,7 +207,7 @@ const services = [
           <h5>Pricing Plan</h5>
           <h2>We Make IT Simple, Faster, And Less Expensive</h2>
           <p>
-            Donec venenatis nunc nec dui faucibus tempus. Fusce sed interdum dolor, non ultricies elit.
+          Flexible pricing designed to grow with your vision choose the plan that fits your journey
           </p>
 
           <div className="pricing-cards">

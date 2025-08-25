@@ -238,7 +238,7 @@
 }
 
 .phone-image img {
-  width: 100%;
+  width: 85%;
   border-radius: 12px;
   object-fit: cover;
 }
@@ -247,7 +247,6 @@
 .footer {
   background-color: #000;
   color: #fff;
-  padding: 8rem 5rem;
   font-family: 'Segoe UI', sans-serif;
 
 }
@@ -263,6 +262,7 @@
 .footer-logo h2 {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
+    color: #fffcfc;
 }
 
 .footer-logo p {
@@ -286,7 +286,7 @@
 }
 
 .footer-column a {
-  color: #ccc;
+  color: #fffcfc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
