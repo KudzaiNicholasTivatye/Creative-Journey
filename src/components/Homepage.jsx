@@ -100,7 +100,7 @@ function App() {
 </header>
 
       {/* -- Partners / Clients Section -- */}
-      <section id="partners">
+      <section className="partners-section">
         <div className="Partners">
           <h2>Our Clients</h2>
           <p>We’ve partnered with forward-thinking brands across Africa:</p>
@@ -243,7 +243,7 @@ function App() {
             and let’s build something impactful together.
           </p>
 
-          <div className="contact-info">
+          <div className="info">
             <p>
               <i className="fas fa-envelope"></i> hello@creativejourney.com
             </p>

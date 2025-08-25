@@ -100,128 +100,157 @@
 }
 
 
-
-
-
-.contact-section {
-
-  background-color: #f9f9f9;
+/* Phone Section */
+.phone-section {
+  padding: 60px 20px;
+  background: #f8f9fc;
 }
 
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
+.phone-container {
   max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
-  margin-bottom: 40px;
 }
 
-.contact-form {
-  flex: 1 1 500px;
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-}
-
-.contact-form h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.contact-form form {
+/* Info Row */
+.phone-info-row {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.contact-form button {
-  background-color: #003366;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #002244;
-}
-
-.contact-info {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 50px;
 }
 
-.info-block h3 {
-  margin-bottom: 5px;
-  font-size: 1.1rem;
-  color: #003366;
+.phone-info-box {
+  flex: 1;
+  min-width: 240px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.map-placeholder {
-  background-color: #ddd;
-  height: 200px;
+.phone-info-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.phone-info-box i {
+  font-size: 35px;
+  color: #007bff;
+  margin-bottom: 12px;
+}
+
+.phone-info-box h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+}
+
+.phone-info-box p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 3px 0;
+}
+
+/* Bottom Layout */
+.phone-bottom {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  color: #555;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
-.cta-box {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
+/* Form */
+.phone-form {
+  flex: 1;
+  min-width: 320px;
+  background: #fff;
+  padding: 30px;
   border-radius: 12px;
-  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
 
-.cta-box h4 {
-  font-size: 1.3rem;
+.phone-form h5 {
+  color: #007bff;
+  font-size: 0.9rem;
   margin-bottom: 10px;
 }
 
-.cta-box button {
-  margin-top: 10px;
-  background-color: white;
-  color: #003366;
-  padding: 10px 20px;
+.phone-form h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.phone-form p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.phone-form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.phone-form input,
+.phone-form textarea {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.phone-form textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
+
+.phone-form button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 18px;
   border: none;
-  border-radius: 6px;
-  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  transition: background 0.3s ease;
 }
 
-.cta-box button:hover {
-  background-color: #f0f0f0;
+.phone-form button:hover {
+  background: #0056b3;
 }
 
+/* Image */
+.phone-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.phone-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
 
 /* ===== Footer / Contact Section ===== */
 .footer {
-  width: 100%;
   background-color: #000;
   color: #fff;
-  padding: 3rem 2rem;
+  padding: 8rem 5rem;
   font-family: 'Segoe UI', sans-serif;
-  box-sizing: border-box;
-}
 
+}
 
 .footer-columns {
   display: flex;
@@ -282,3 +311,9 @@
 .social-icons a:hover {
   color: #fff;
 }
+
+
+
+
+
+
