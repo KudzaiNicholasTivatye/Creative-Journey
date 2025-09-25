@@ -117,6 +117,27 @@
   color: white;
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .intro-section h1 {
+    font-size: 2rem; /* slightly smaller on tablets */
+  }
+
+  .intro-section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-section h1 {
+    font-size: 1.5rem; /* small screen phones */
+  }
+
+  .intro-section p {
+    font-size: 0.9rem;
+  }
+}
+ /*about 1st section*/
 .we-are-umbra {
   padding: 4rem 2rem;
   background-color: #fff;
@@ -167,6 +188,41 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
+/* ===========================
+   MOBILE RESPONSIVENESS
+   =========================== */
+@media (max-width: 768px) {
+  /* --- We Are Umbra --- */
+  .umbra-content {
+    flex-direction: column; /* stack text and image */
+    text-align: center;
+  }
+
+  .text {
+    flex: 1 1 100%;
+  }
+
+  .text h2 {
+    font-size: 1.6rem; /* smaller heading */
+  }
+
+  .text p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .image {
+    flex: 1 1 100%;
+    margin-top: 1.5rem;
+  }
+
+  .image img {
+    max-width: 90%;
+    margin: 0 auto; /* center image */
+  }
+
+  
+}
 
 /* why choose us */
 .why-choose-us {
@@ -236,6 +292,64 @@
   font-size: 15px;
   color: #555;
   line-height: 1.6;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .why-choose-us {
+    padding: 60px 15px;
+  }
+
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .reason-card {
+    padding: 25px 15px;
+  }
+
+  .icon-wrapper {
+    font-size: 32px;
+  }
+
+  .reason-title {
+    font-size: 16px;
+  }
+
+  .reason-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-choose-us {
+    padding: 50px 10px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  .reason-card {
+    padding: 20px 12px;
+    transform: scale(0.85); /* shrink the entire card */
+    transform-origin: top center; /* keeps it aligned nicely */
+  }
+
+  .icon-wrapper {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .reason-title {
+    font-size: 15px;
+  }
+
+  .reason-description {
+    font-size: 13px;
+  }
 }
 
 /*about company*/
@@ -435,6 +549,7 @@
   font-size: 0.9rem;
   font-weight: 500;
 }
+
 
 
 /* ===== floating Section ===== */
